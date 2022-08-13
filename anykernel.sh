@@ -14,6 +14,9 @@ device.name2=aliothin
 device.name3=apollo
 device.name4=apolloin
 device.name5=lmi
+device.name6=cmi
+device.name7=umi
+device.name8=munch
 supported.versions=
 supported.patchlevels=
 '; } # end properties
@@ -32,9 +35,7 @@ no_block_display=1
 ## Select the correct image to flash
 userflavor="$(file_getprop /system/build.prop "ro.build.flavor")";
 case "$userflavor" in
-    aospa_alioth-user*) os="aospa"; os_string="Paranoid Android ROM";;
-    aospa_apollo-user*) os="aospa"; os_string="Paranoid Android ROM";;
-    aospa_lmi-user*) os="aospa"; os_string="Paranoid Android ROM";;
+    aospa*) os="aospa"; os_string="Paranoid Android ROM";;
     qssi-user) os="miui"; os_string="MIUI ROM";;
     *) os="aosp"; os_string="AOSP ROM";;
 esac;
