@@ -17,6 +17,7 @@ device.name5=lmi
 device.name6=cmi
 device.name7=umi
 device.name8=munch
+device.name9=munchin
 supported.versions=
 supported.patchlevels=
 '; } # end properties
@@ -37,6 +38,7 @@ userflavor="$(file_getprop /system/build.prop "ro.build.flavor")";
 case "$userflavor" in
     aospa*) os="aospa"; os_string="Paranoid Android ROM";;
     qssi-user) os="miui"; os_string="MIUI ROM";;
+    missi-user) os="miui"; os_string="MIUI ROM";;
     *) os="aosp"; os_string="AOSP ROM";;
 esac;
 ui_print "  -> $os_string is detected!";
