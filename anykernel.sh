@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-do.devicecheck=0
+do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
@@ -18,7 +18,7 @@ device.name6=cmi
 device.name7=umi
 device.name8=munch
 device.name9=munchin
-supported.versions=
+supported.versions=11 - 13
 supported.patchlevels=
 '; } # end properties
 
